@@ -45,8 +45,8 @@ $app->post('/callback', function (Request $request) use ($app) {
                         'id' => $from, 
                     ],
                     'message' => [
-                        // 'text' => sprintf('%sじゃない', $text),
-                        'text' => sprintf($text), 
+                        'text' => sprintf('すっごい%s', $text),
+                        // 'text' => sprintf($text), 
                     ],
                 ];
                 $client->request('POST', $path, ['json' => $json]);
