@@ -45,7 +45,7 @@ $app->post('/callback', function (Request $request) use ($app) {
                         'id' => $from, 
                     ],
                     'message' => [
-                        'text' => sprintf('すっごい%s', $text),
+                        'text' => sprintf('%sすっごい好き', $text),
                         // 'text' => sprintf($text), 
                     ],
                 ];
